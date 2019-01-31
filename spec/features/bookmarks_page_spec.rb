@@ -24,9 +24,7 @@ feature 'delete bookmarks' do
     Bookmark.create("Two", "http://www.two.com")
     visit '/bookmarks'
     first('.bookmark').click_on 'Delete'
-    expect(page).not_to have_content "Twitter"
+    expect(current_path).to eq '/bookmarks'
+    expect(page).not_to have_link('Twitter', href: 'http://www.twitter.com')
   end
 end
-
-
-#Bookmark.delete[bookmark1]
