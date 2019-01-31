@@ -27,4 +27,22 @@ feature 'delete bookmarks' do
     expect(current_path).to eq '/bookmarks'
     expect(page).not_to have_link('Twitter', href: 'http://www.twitter.com')
   end
+
+feature 'update bookmarks' do
+  scenario 'bookmark can be updated' do
+    populate_test_db
+    visit '/bookmarks'
+    first('.bookmark').click_on 'Edit'
+
+    fill_in 'url', with:"http://www.edited.com"
+    fill_in 'title', with:"Updated"
+    click_on('Submit')
+
+    expect(current_path).to eq '/bookmarks'
+    expect(page).not_to have_link('Makers', href: 'http://www.makersacademy.com')
+    expect(page).to have_link('Updated', href: 'http://www.edited.com')
+  end
+
+end
+
 end

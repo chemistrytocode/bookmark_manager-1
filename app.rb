@@ -1,5 +1,6 @@
 require 'sinatra/base'
 require_relative './lib/bookmark'
+require_relative './spec/setup_test_database'
 
 class BookmarkApp < Sinatra::Base
   enable :sessions, :method_override
@@ -27,8 +28,14 @@ class BookmarkApp < Sinatra::Base
     redirect '/bookmarks'
   end
 
-  patch '/bookmarks/:id' do
+  get '/bookmarks/:id/edit' do
+    @bookmarks = Bookmark.find(id: params[:id])
+    erb :"bookmarks/edit"
+  end
 
+  patch '/bookmarks/:id' do
+    Bookmark.update(id: params[:id], title: params[:title], url: params[:url])
+    redirect '/bookmarks'
   end
 
 end

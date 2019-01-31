@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <form action = "/bookmarks/<%= @bookmarks.id %>" method="post">
+      <input type="hidden" name="_method" value="PATCH">
+      <input type = "text" name = "url" value = "<%= @bookmarks.url %>"></input>
+      <input type = "text" name = "title" value = "<%= @bookmarks.title %>"></input>
+      <input type="submit"value="Submit">
+    </form>
+  </body>
+</html>

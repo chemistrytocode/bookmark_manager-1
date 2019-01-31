@@ -19,8 +19,13 @@
             <input type="hidden" name="_method" value="DELETE">
             <input type = "submit" value = "Delete"></input>
             </form>
+            <form action = "/bookmarks/<%= bookmark.id %>/edit" method="get">
+              <input type="submit"value="Edit">
+            </form>
+            
             </li>
-      <% end %> <br>
+      <% end %>
+      <br>
 
 
     <br><br><br> <!-- Isabels Handiwork -->
