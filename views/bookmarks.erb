@@ -10,7 +10,7 @@
 
         <ul>
       <% @bookmarks.each do |bookmark| %>
-          <li class = "bookmark" id = "bookmark-<%bookmark.id%>" >
+          <li class = "bookmark">
             <a href='<%= bookmark.url %>'><%= bookmark.title %></a> <br>
             <form action = "/bookmarks/<%= bookmark.id %>" method = "get" >
             <input type = "submit" value = "Delete"></input>
@@ -18,7 +18,7 @@
       <% end %> <br>
 
 
-    <br><br><br>
+    <br><br><br> <!-- Isabels Handiwork -->
     <form action = "/add_bookmark" method="get">
      <input type= "submit" value = "Add bookmark"></input>
     </form>

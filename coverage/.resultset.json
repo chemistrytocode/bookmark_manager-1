@@ -1,29 +1,11 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Isabel/projects/Makers_Month2/bookmark_manager/spec/bookmark_spec.rb": [
+      "/Users/paulayling/Makers_Academy/Week_Projects/bookmark_manager_chloe/bookmark_manager-1/spec/bookmark_spec.rb": [
         1,
         1,
         null,
         1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/Isabel/projects/Makers_Month2/bookmark_manager/spec/features/bookmarks_page_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
         1,
         1,
         1,
@@ -44,11 +26,54 @@
         1,
         null,
         null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         null,
         null,
         null
       ],
-      "/Users/Isabel/projects/Makers_Month2/bookmark_manager/spec/features/index_page_spec.rb": [
+      "/Users/paulayling/Makers_Academy/Week_Projects/bookmark_manager_chloe/bookmark_manager-1/spec/features/bookmarks_page_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/paulayling/Makers_Academy/Week_Projects/bookmark_manager_chloe/bookmark_manager-1/spec/features/index_page_spec.rb": [
         1,
         1,
         1,
@@ -64,6 +89,6 @@
         null
       ]
     },
-    "timestamp": 1548869516
+    "timestamp": 1548944687
   }
 }
